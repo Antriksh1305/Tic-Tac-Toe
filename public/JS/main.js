@@ -4,6 +4,7 @@ const toggle = document.getElementById('toggle');
 const CPU = document.querySelector('.CPU');
 const human = document.querySelector('.human');
 
+localStorage.setItem("player-mark","x");
 togglex.addEventListener('click',()=>{
     console.log('clicked x');
     if(!togglex.classList.contains('selected')){
@@ -11,6 +12,7 @@ togglex.addEventListener('click',()=>{
         togglex.classList.add('selected');
         toggleo.classList.remove('selected');
     }
+    localStorage.setItem("player-mark","x");
 });
 
 toggleo.addEventListener('click',()=>{
@@ -22,11 +24,14 @@ toggleo.addEventListener('click',()=>{
         toggleo.classList.add('selected');
         togglex.classList.remove('selected');
     }
+    localStorage.setItem("player-mark","o");
 });
 
 CPU.addEventListener('click',()=>{
+    localStorage.setItem("versus","CPU");
     location.href = './game_board';
 });
 human.addEventListener('click',()=>{
+    localStorage.setItem("versus","player");
     location.href = './game_board';
 });

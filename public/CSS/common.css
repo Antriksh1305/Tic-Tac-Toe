@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #01436e;
+    --o-color: #F2B137;
+    --o-dark: #ac7818;
+    --x-color: #4E9DD2;
+    --x-dark: #1e6798;
+    --black: #000000;
+    --white: #ffffff;
+    --danger: #c62828;
+    --water: #2196F3;
+    --box-color: #3581b4;
+    --button-color: #a8bfc9;
+    --button-light: #c6d2d7;
+    --box-shadow1: #083655;
+    --box-yellow-light: #f1bd5b;
+    --box-blue-light: #6eafdb;
+    --box-shadow2: #c9912b;
+    --box-shadow3: #3080b6;
+    --button-shadow: #6b8997;
+    --text-color1: #bbcad0;
+    --text-color2: #c0d0d6;
+
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extra-bold:800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
