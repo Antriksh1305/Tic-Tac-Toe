@@ -1,0 +1,190 @@
+body,
+main,
+.buttons,
+.menu,
+.menu_logo,
+.selectMark,
+.selectMark_toggler,
+.selectMark--x,
+.selectMark--o {
+    display: flex;
+    justify-content: center;
+}
+
+body,
+.menu,
+.menu_logo,
+.selectMark,
+.selectMark_toggler,
+.selectMark--x,
+.selectMark--o,
+.buttons {
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    text-align: center;
+    user-select: none;
+}
+
+.menu,
+.selectMark {
+    flex-direction: column;
+}
+
+.game-title {
+    font-size: 25px;
+    font-weight: var(--semibold);
+    border-width: 2px;
+    border-radius: 10px 0 0 10px;
+    background: var(--box-color);
+}
+
+.menu_logo {
+    margin-bottom: 40px;
+    border-radius: 12px;
+    border: 2px solid var(--box-color);
+}
+
+.game-title,
+.menu_logo #logo {
+    padding: 10px;
+}
+
+.menu .menu_logo #logo {
+    width: 80px;
+    height: inherit;
+}
+
+.selectMark {
+    background: var(--box-color);
+    width: 470px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: inset 0 -8px 0 var(--box-shadow1);
+}
+
+.selectMark h1 {
+    color: var(--text-color1);
+    font-weight: var(--bold);
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-weight: var(--extra-bold);
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 15px;
+}
+
+.selectMark_toggler {
+    width: 400px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    transition: all 1s ease;
+}
+
+.toggle {
+    width: 200px;
+    height: inherit;
+    border-radius: inherit;
+    background-color: var(--text-color2);
+    z-index: 1;
+    position: fixed;
+    transition: transform .8s;
+}
+
+.selectMark--x,
+.selectMark--o {
+    width: 45%;
+    height: 60px;
+    border-radius: 10px;
+    background: var(--bg-color);
+}
+
+.selectMark--x {
+    margin-right: 0;
+}
+
+.selectMark--o {
+    margin-left: 0;
+}
+
+.svg-x {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    background: url('../images/icon-x-white.svg');
+}
+
+.svg-o {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    background: url('../images/icon-o-white.svg');
+}
+
+.selectMark_toggler .selected .svg-x {
+    background: url('../images/icon-x-blue.svg') !important;
+}
+
+.selectMark_toggler .selected .svg-o {
+    background: url('../images/icon-o-blue.svg') !important;
+}
+
+.selectMark p {
+    color: var(--text-color2);
+    font-weight: var(--semibold);
+    position: relative;
+    top: 15px;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.selectMark--o,
+.selectMark--x,
+.button__launch {
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 20px;
+    font-weight: var(--bold);
+    font-size: 22px;
+    text-align: center;
+}
+
+.button__launch {
+    padding: 20px;
+    margin: 10px;
+    width: 225px;
+    border-radius: 10px;
+}
+
+.buttons .CPU {
+    background: var(--o-color);
+    box-shadow: inset 0 -6px 0 var(--box-shadow2);
+}
+
+.buttons .CPU:hover {
+    background: var(--box-yellow-light) !important;
+}
+
+.buttons .human {
+    background: var(--x-color);
+    box-shadow: inset 0 -6px 0 var(--box-shadow3);
+}
+
+.buttons .human:hover {
+    background: var(--box-blue-light) !important;
+
+}
+
+.buttons .CPU:active,
+.buttons .human:active {
+    box-shadow: inset 0 0 0;
+    transition: all .5s ease;
+    transform: translateY(8px);
+}
