@@ -6,11 +6,13 @@ const PORT = 5000;
 
 app.use(express.static('./public'));
 
+console.log(__dirname);
 app.get('/',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./public/HTML/index.html'));
+    res.sendFile(path.resolve(__dirname,'./public/index.html'));
+    console.log('reached');
 });
 
-app.get('/game_board',(req,res)=>{
+app.get('/HTML/game_board',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./public/HTML/game_board.html'));
 });
 
