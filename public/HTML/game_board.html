@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/common.css">
     <link rel="stylesheet" href="../CSS/board.css">
+    <link rel="stylesheet" href="../CSS/banner.css">
     <link rel="stylesheet" href="../CSS/game.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -59,17 +60,17 @@
             </div>
             <!-------------------->
             <div class="board_footer">
-                <div class="board_score board_score-x">
+                <div class="board_score board_score-x player">
                     <div class="label">X (YOU)</div>
-                    <div class="output" id="board_score-x" data-value="0">0</div>
+                    <div class="output" id="board_score-x">0</div>
                 </div>
                 <div class="board_score board_score-tie">
                     <div class="label">TIES</div>
-                    <div class="output" id="board_score-tie" data-value="0">0</div>
+                    <div class="output" id="board_score-tie">0</div>
                 </div>
-                <div class="board_score board_score-o">
+                <div class="board_score board_score-o cpu">
                     <div class="label">O (CPU)</div>
-                    <div class="output" id="board_score-o" data-value="0">0</div>
+                    <div class="output" id="board_score-o">0</div>
                 </div>
             </div>
             <div class="opponent-message loading">
@@ -77,14 +78,27 @@
                 <img src="../images/loading.gif" alt="loading">
             </div>
         </div>
+        <!-----------Banners------------->
+        <div class="banner">
+            <div class="banner_content">
+                <p class="banner-text1">YOU WON!</p>
+                <!-- OH NO, YOU LOST! -->
+                <div class="banner-winner banner-text2">TAKES THE ROUND</div>
+                <div class="banner-buttons">
+                    <div class="button btn1">QUIT</div>
+                    <div class="button btn2">NEXT ROUND</div>
+                </div>
+            </div>
+        </div>
+
         <!-- <div class="banner banner_winner">
             <div class="banner_wrapper">
                 <div class="whoWins">
                     <div class="humanWins">
-                        <h2>Yes, you win !</h2>
+                        <h2>YOU WIN!</h2>
                     </div>
                     <div class="cpuWins">
-                        <h2>Oh no, you lost...</h2>
+                        <h2>YOU LOST!</h2>
                     </div>
                     <div class="playerOneWins">
                         <h2>PLAYER 1 WINS</h2>
@@ -94,11 +108,11 @@
                     </div>
                 </div>
                 <div class="whoTakes">
-                    <div class="x-takes">Takes the round</div>
-                    <div class="o-takes">Takes the round</div>
+                    <div class="x-takes">TAKES THE ROUND</div>
+                    <div class="o-takes">TAKES THE ROUND</div>
                 </div>
-                <div><button class="button_quit">quit</button> <button class="button_restart--game o-color">next
-                        round</button></div>
+                <div><button class="button_quit">quit</button> <button class="button_restart--game o-color">NEXT
+                        ROUND</button></div>
             </div>
         </div>
         <div class="banner banner_tie">
@@ -112,10 +126,10 @@
         </div>
         <div class="banner banner_restart">
             <div class="banner_wrapper">
-                <div class="takes">RESTART GAME?</div>
+                <div class="takes">RESTART GAME</div>
                 <div>
-                    <button class="button_cancel">Cancel</button>
-                    <button class="button_restart--game o-color">Restart</button>
+                    <button class="button_cancel">NO, CANCELl</button>
+                    <button class="button_restart--game o-color">YES, RESTART</button>
                 </div>
             </div>
         </div> -->
