@@ -164,7 +164,7 @@ function winning(win_comb) {
             }
             setTimeout(() => {
                 banner.classList.add('active');
-            }, 3000);
+            }, 1700);
 
             return arr[(win_comb[i][0])].dataset.move;
         }
@@ -177,7 +177,7 @@ function winning(win_comb) {
         text2.innerText = 'ROUND TIED';
         setTimeout(() => {
             banner.classList.add('active');
-        }, 3000);
+        }, 1700);
         console.log('tie');
         return undefined;
     }
