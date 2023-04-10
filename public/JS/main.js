@@ -29,9 +29,9 @@ toggleo.addEventListener('click',()=>{
 
 CPU.addEventListener('click',()=>{
     localStorage.setItem("versus","CPU");
-    location.href = './HTML/game_board';
+    location.href = './game_board';
 });
 human.addEventListener('click',()=>{
     localStorage.setItem("versus","player");
-    location.href = './HTML/game_board';
+    location.href = './game_board';
 });

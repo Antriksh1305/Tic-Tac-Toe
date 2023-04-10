@@ -12,8 +12,8 @@ app.get('/',(req,res)=>{
     console.log('reached');
 });
 
-app.get('/HTML/game_board',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./public/HTML/game_board.html'));
+app.get('/game_board',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./public/game_board.html'));
 });
 
 app.listen(PORT,()=>{

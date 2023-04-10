@@ -85,7 +85,7 @@ btn1.addEventListener('click', () => {
             banner.classList.remove('restart');
         }
         else {
-            location.href = '../';
+            location.href = './';
         }
     }, 1000);
 })
