@@ -135,11 +135,13 @@ function winning(win_comb) {
                     player.children[1].innerText = (++playerscore);
                     if(localStorage.getItem('versus') === 'CPU') text1.innerText = 'YOU WON !';
                     else text1.innerText = 'PLAYER 1 WON !';
+                    text2.innerText = 'TAKES THE ROUND';
                 }
                 else {
                     cpu.children[1].innerText = (++cpuscore);
                     if(localStorage.getItem('versus') === 'CPU') text1.innerText = 'OH NO, YOU LOST !';
                     else text1.innerText = 'PLAYER 2 WON !';
+                    text2.innerText = 'TAKES THE ROUND';
                 }
                 console.log('O Wins');
             }
@@ -150,11 +152,13 @@ function winning(win_comb) {
                     player.children[1].innerText = (++playerscore);
                     if(localStorage.getItem('versus') === 'CPU') text1.innerText = 'YOU WON !';
                     else text1.innerText = 'PLAYER 1 WON !';
+                    text2.innerText = 'TAKES THE ROUND';
                 }
                 else {
                     cpu.children[1].innerText = (++cpuscore);
                     if(localStorage.getItem('versus') === 'CPU') text1.innerText = 'OH NO, YOU LOST !';
                     else text1.innerText = 'PLAYER 2 WON !';
+                    text2.innerText = 'TAKES THE ROUND';
                 }
                 console.log('X Wins');
             }
